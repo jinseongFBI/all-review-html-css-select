@@ -1,0 +1,58 @@
+body{
+    font-size: 50;
+}
+.complication{
+    font-size: 70;
+}
+#today{
+    color:red
+}
+div.complication{
+    font-size: 100;
+}
+ul > .cat{
+    color:rebeccapurple;
+}
+div > .cat{
+    color:rebeccapurple;
+}
+.cat + li{
+    color:red;
+}
+.cat li:first-child{
+    color:orchid;
+}
+.cat li:last-child{
+    color:darkblue;
+}
+.cat *:nth-child(2){
+    color:darkcyan;
+}
+.cat *:nth-child(2n){
+    color:red;
+}
+.fruits *:nth-child(2n+1){
+    color:darkgreen;
+}
+.fruits *:not(li){
+    color:darkseagreen;
+}
+
+
+.complication .ul ~li{
+    color:rosybrown;
+}
+a:hover{
+    color:blue;
+}
+a:active{
+    color:red;
+}
+input:focus{
+    background-color:orange;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}

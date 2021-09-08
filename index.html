@@ -1,0 +1,104 @@
+<!-- 문서의 전체범위 -->
+<!DOCTYPE html>
+
+<html lang="ko">
+  <!-- 문서의 정보를 나타내는 범위 -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css 초기화s -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <!-- css 연결 절대경로-->
+    <link rel="stylesheet" href="/main.css">
+    <!-- js 연결  상대경로-->
+    <script defer src="./main.js"></script>
+    
+    
+</head>
+<!-- 문서의 구조를 나타내는 범위 -->
+<body>
+  <!-- 기본적으로 html은 꾸미기가 아닌 뼈대(구조)를 잡는 것이다.살붙이기x -->
+  <input type="text"value="hi">
+  <!-- 데이터 힌트 -->
+  <input type="text" placeholder="이름을 입력하세요!">
+  <!-- 비활성화 -->
+  <input type="text" disabled>
+  <label><input type="checkbox"> Apple</label>
+  <label><input type="checkbox" checked> Banana</label>
+  <label><input type="radio" name="fruits">Apple</label>
+  <label><input type="radio" name="fruits">Banana</label>
+ <table>
+   <tr>
+     <td>A</td>
+     <td>B</td>
+   </tr>
+   <tr>
+     <td>C</td>
+     <td>D</td>
+   </tr>
+ </table>
+  
+    <div class="complication">
+      <h1 id="today">오늘의 날씨</h1>
+      <h2 data-title-name="titlename">기상예보</h2>
+      <!-- br 줄바꿈요소 -->
+
+      <p>집중호우,<br/>태풍</p>
+      <!-- 이미지 연결 -->
+    <img src="./cat.jpg" alt="cat">
+    <!-- 이미지 url로 연결 -->
+    <img src="https://lh3.googleusercontent.com/proxy/dNZ2zpcSi24njcEwujdqwnDvKDIX2Vi09kM--nGnJv2BQH1Wa_KDJgeOxbbCULaC999xqC6FIHUSOgmLu0eJR04D1oTtJs447zrje0SNdqtITLCggA" alt="cat">
+    <!-- Anchor 연결 target=링크 url의 표시(탭)위치 -->
+    <a href="https://www.naver.com" target="_blank">NAVER</a>
+      <ul>
+        <li class="cat">고양이</li>
+        <li>사자</li>
+        <li>강아지</li>
+        <li>백조</li>
+        <li>오리</li>
+        <li class="cat">고양이</li>
+        
+      </ul>
+    </div>
+    <!-- 띄어쓰기 없음 -->
+<span>Hello</span><span>world</span>
+<!-- 띄어쓰기 있음 -->
+<span>Hello</span>
+<span>world</span>
+<!-- 포함한 콘텐츠 크기만큼 자동으로 줄어듬 -->
+<span style="width: 100px;">Hello</span>
+<span style="height: 100px;">World</span>
+
+<!-- 인라인 요소에서는 반응 없음 -->
+
+<!-- 요소의 여부 여백을 지정하는 css 속성 -->
+<span style="margin: 20px 20px;">Hello</span>
+<!-- 요소의 외부 여백을 지정하는 css 속성 -->
+<span style="padding: 20px 20px;">Hello</span>
+<!-- 인라인>상자 포함x -->
+<!-- 블락(상자)>인라인 가능 -->
+
+<!-- 블록요소 -->
+<!-- 부모 요소의 크기만큼 자동으로 늘어남 -->
+<div style="width: 100px;">Hello</div>
+<!-- 포함한 크기만큼 자동으로 줄어듬 -->
+<div style="height: 40px;">World</div>
+
+<!-- 요소의 외부 여백을 지정하는 css속성 -->
+<div style="margin: 10px;">Hello</div>
+<!-- 요소의 내부 여백을 지정하는 css 속성 -->
+<div style="padding: 10px;">World</div>
+
+<!-- 가능 -->
+<div>
+  <div></div>
+</div>
+<!-- 가능 -->
+<div><span></span></div>
+
+
+<div class="box"></div>
+</body>
+</html>
